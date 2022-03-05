@@ -1,0 +1,25 @@
+.playerList {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+}
+
+.playerList-searchbar {
+  height: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.playerList-searchbar input {
+  width: 25rem;
+  height: 3.1rem;
+}
+
+.playerList-playlist {
+  width: 25rem;
+  height: 54rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}

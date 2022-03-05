@@ -1,0 +1,31 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  font-size: 1.6rem;
+  position: relative;
+}
+
+.sidebar-spotify-logo {
+  width: 31.1rem;
+  height: 3.1rem;
+  padding-bottom: 0.5rem;
+}
+
+.sidebar-listElements {
+  list-style: none;
+  color: var(--secondary-color);
+}
+
+.sidebar-listElement {
+  padding-bottom: 1rem;
+}
+
+.active {
+  color: var(--primary-color);
+}
+
+.sidebar-profile-logo {
+  position: absolute;
+  bottom: 2.2rem;
+}
