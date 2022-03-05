@@ -1,10 +1,13 @@
 import "./PlayerList.css";
-import Album from "./album.png";
-import { useState } from "react/cjs/react.production.min";
+import { useState, useEffect } from "react";
 
 export const PlayerList = ({ musicData }) => {
-  const [data, setData] = useState(musicData);
-  console.log(musicData);
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    setData((prevData) => musicData.getSongs);
+  }, [musicData]);
+  console.log(typeof musicData, musicData, data);
   return (
     <div className="playerList">
       <div className="playerList-searchbar">

@@ -3,6 +3,12 @@
   flex-direction: column;
   flex: 3;
   padding-top: 2.5rem;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.playerList::-webkit-scrollbar {
+  display: none;
 }
 
 .playerList-searchbar {

@@ -20,6 +20,8 @@ export default function App() {
     variables: { playlistId: 1 },
   });
   // console.log(data);
+  if (loading) return "Loading...";
+  if (error) return "Something bad happened";
   return (
     <div className="app">
       <Sidebar />
