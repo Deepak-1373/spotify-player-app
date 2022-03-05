@@ -17,7 +17,7 @@ export const PlayerList = ({ musicData }) => {
 
       {data &&
         data.map(({ id, title, artist, url, photo, duration }) => (
-          <div className="playerList-playlist" key={id}>
+          <div key={id} className="playerList-playlist">
             <img alt="Album Poster" src={photo} />
             <div className="playerList-album-title">
               <h3>{title}</h3>
