@@ -1,0 +1,29 @@
+.musicPlayer {
+  display: flex;
+  flex: 3;
+  flex-direction: column;
+  margin-left: 5rem;
+  padding-top: 2.5rem;
+}
+
+.musicPlayer-title h3 {
+  font-size: 3.2rem;
+  font-weight: 800;
+}
+
+.musicPlayer-title p {
+  color: var(--secondary-color);
+  padding-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.musicPlayer-image {
+  margin-top: 2rem;
+  width: 43rem;
+  height: 43rem;
+}
+
+.musicPlayer-image img {
+  width: 40rem;
+  height: 40rem;
+}

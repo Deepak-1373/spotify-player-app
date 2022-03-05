@@ -1,5 +1,28 @@
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #99948c;
+  --background-color: #1b1305;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, Inter, Segoe UI, Roboto,
+    Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  background-color: var(--background-color);
+  color: var(--primary-color);
 }

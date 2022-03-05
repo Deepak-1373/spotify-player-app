@@ -1,0 +1,46 @@
+.playerList {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+  padding-top: 2.5rem;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.playerList::-webkit-scrollbar {
+  display: none;
+}
+
+.playerList-searchbar {
+  height: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.playerList-searchbar input {
+  width: 25rem;
+  height: 3.1rem;
+}
+
+.playerList-playlist {
+  width: 25rem;
+  height: 54rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.playerList-playlist img {
+  width: 3.2rem;
+  height: 3.3rem;
+}
+
+.playerList-album-title {
+  padding-right: 11rem;
+}
+
+.playerList-album-title p {
+  color: var(--secondary-color);
+  margin-top: 0.3rem;
+}
