@@ -19,7 +19,6 @@ export default function App() {
   const { data, loading, error } = useQuery(PLAYLIST_QUERY, {
     variables: { playlistId: 1 },
   });
-  // console.log(data);
   if (loading) return "Loading...";
   if (error) return "Something bad happened";
   return (
