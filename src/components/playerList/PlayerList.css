@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   flex: 3;
+  padding-top: 2.5rem;
 }
 
 .playerList-searchbar {
@@ -22,4 +23,18 @@
   margin-top: 2rem;
   display: flex;
   justify-content: space-between;
+}
+
+.playerList-playlist img {
+  width: 3.2rem;
+  height: 3.3rem;
+}
+
+.playerList-album-title {
+  padding-right: 11rem;
+}
+
+.playerList-album-title p {
+  color: var(--secondary-color);
+  margin-top: 0.3rem;
 }
