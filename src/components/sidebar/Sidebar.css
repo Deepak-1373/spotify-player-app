@@ -1,7 +1,6 @@
 .sidebar {
   display: flex;
   flex-direction: column;
-  flex: 1;
   font-size: 1.3rem;
   padding-top: 1.5rem;
   grid-area: sidebar;

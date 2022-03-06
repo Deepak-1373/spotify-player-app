@@ -1,6 +1,6 @@
 import "./Sidebar.css";
-import Vector from "../sidebar/Vector.png";
-import Profile from "../sidebar/Profile.svg";
+import Vector from "../../utilities/Vector.png";
+import Profile from "../../utilities/Profile.svg";
 
 export const Sidebar = () => {
   return (

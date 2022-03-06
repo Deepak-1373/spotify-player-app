@@ -1,20 +1,8 @@
 import "./styles.css";
 import { Sidebar, PlayerList, MusicPlayer } from "./components";
-import { useQuery, gql } from "@apollo/client";
 import { useState } from "react";
-
-const PLAYLIST_QUERY = gql`
-  query ExampleQuery($playlistId: Int!) {
-    getSongs(playlistId: $playlistId) {
-      _id
-      title
-      photo
-      url
-      duration
-      artist
-    }
-  }
-`;
+import { PLAYLIST_QUERY } from "./api/data";
+import { useQuery } from "@apollo/client";
 
 export default function App() {
   const [posterData, setPosterData] = useState({

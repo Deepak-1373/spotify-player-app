@@ -1,5 +1,5 @@
 import "./MusicPlayer.css";
-import Cover from "./utilities/Cover.jpg";
+import Cover from "../../utilities/Cover.jpg";
 import { PlayerControl } from "./PlayerControl";
 import { useState, useEffect, useRef } from "react";
 

@@ -8,6 +8,12 @@ export const PlayerList = ({ musicData, handleClick }) => {
     setData((prevData) => musicData.getSongs);
   }, [musicData]);
 
+  const timeConvert = (num) => {
+    var hours = Math.floor(num / 60);
+    var minutes = num % 60;
+    return hours + ":" + minutes;
+  };
+
   return (
     <div className="playerList">
       <div className="playerList-searchbar">
@@ -17,7 +23,7 @@ export const PlayerList = ({ musicData, handleClick }) => {
 
       <div className="song-list">
         {data &&
-          data.map(({ id, title, artist, url, photo, duration }) => (
+          data.map(({ title, artist, url, photo, duration }) => (
             <div
               key={title}
               className="playerList-playlist"
@@ -30,7 +36,7 @@ export const PlayerList = ({ musicData, handleClick }) => {
                   <p>{artist}</p>
                 </div>
               </div>
-              <p>{duration}</p>
+              <p>{timeConvert(duration)}</p>
             </div>
           ))}
       </div>
