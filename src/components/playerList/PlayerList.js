@@ -21,7 +21,7 @@ export const PlayerList = ({ musicData, handleClick }) => {
             <div
               key={title}
               className="playerList-playlist"
-              onClick={() => handleClick(id, photo)}
+              onClick={() => handleClick(photo, title, artist)}
             >
               <div className="playerList-album-title">
                 <img alt="Album Poster" src={photo} />

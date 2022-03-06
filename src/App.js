@@ -17,7 +17,11 @@ const PLAYLIST_QUERY = gql`
 `;
 
 export default function App() {
-  const [url, setUrl] = useState("");
+  const [posterData, setPosterData] = useState({
+    url: "",
+    title: "",
+    artist: "",
+  });
 
   const { data, loading, error } = useQuery(PLAYLIST_QUERY, {
     variables: { playlistId: 1 },
@@ -25,14 +29,19 @@ export default function App() {
   if (loading) return "Loading...";
   if (error) return "Something bad happened";
 
-  const handleClick = (id, url) => {
-    setUrl((prevUrl) => url);
+  const handleClick = (url, title, artist) => {
+    setPosterData((prevData) => ({
+      ...prevData,
+      url: url,
+      title: title,
+      artist: artist,
+    }));
   };
   return (
     <div className="app">
       <Sidebar />
       <PlayerList musicData={data} handleClick={handleClick} />
-      <MusicPlayer url={url} />
+      <MusicPlayer data={posterData} />
     </div>
   );
 }
