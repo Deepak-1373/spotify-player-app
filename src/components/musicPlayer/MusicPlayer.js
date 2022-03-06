@@ -1,10 +1,10 @@
 import "./MusicPlayer.css";
-import Cover from "./Cover.jpg";
-import Vector from "./Vector.png";
-import Forward from "./forward.png";
-import Backward from "./backward.png";
-import Play from "./play.png";
-import Frame from "./Frame.png";
+import Cover from "./utilities/Cover.jpg";
+import Vector from "./utilities/Vector.png";
+import Forward from "./utilities/forward.png";
+import Backward from "./utilities/backward.png";
+import Play from "./utilities/play.png";
+import Frame from "./utilities/Frame.png";
 import { Image } from "./Image";
 
 export const MusicPlayer = ({ url }) => {
