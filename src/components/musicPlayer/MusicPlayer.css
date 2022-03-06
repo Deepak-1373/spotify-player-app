@@ -53,3 +53,36 @@
   justify-content: space-between;
   width: 14rem;
 }
+
+/* 
+Image Container
+ */
+
+.image-small {
+  width: 2.2rem !important;
+  height: 1.2rem;
+}
+
+.image-play {
+  margin: 0 1.5rem;
+}
+
+.image-vector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.music-controls {
+  display: flex;
+}
