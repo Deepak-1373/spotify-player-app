@@ -19,7 +19,7 @@ export const PlayerList = ({ musicData, handleClick }) => {
         {data &&
           data.map(({ id, title, artist, url, photo, duration }) => (
             <div
-              key={id}
+              key={title}
               className="playerList-playlist"
               onClick={() => handleClick(id, photo)}
             >

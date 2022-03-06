@@ -18,12 +18,15 @@ export const MusicPlayer = ({ url }) => {
         <img src={url === "" ? Cover : url} alt="Cover Image" />
       </div>
       <div className="musicPlayer-buttons">
-        <img src={Ellipse} alt="Ellipse Logo" className="ellipse-logo"></img>
         <img src={Vector} alt="Vector Logo" className="vector-logo"></img>
         <div className="playPause-div">
-          <img src={Backward} alt="Backward Logo" />
+          <div>
+            <img src={Backward} alt="Backward Logo" />
+          </div>
           <img src={Play} alt="Play/Pause Logo" />
-          <img src={Forward} alt="Forward Logo" />
+          <div>
+            <img src={Forward} alt="Forward Logo" />
+          </div>
         </div>
         <img src={Frame} alt="Volume Logo" />
       </div>
