@@ -1,44 +1,44 @@
 :root {
-	--primary-color: #ffffff;
-	--secondary-color: #99948c;
-	--background-color: #1b1305;
+  --primary-color: #ffffff;
+  --secondary-color: #99948c;
+  --background-color: #1b1305;
 }
 
 html {
-	font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 img {
-	max-inline-size: 100%;
-	block-size: auto;
+  max-inline-size: 100%;
+  block-size: auto;
 }
 
 .app {
-	display: grid;
-	grid-template-columns: 15rem 30rem auto;
-	grid-template-areas: "sidebar playlist musicplayer";
-	justify-content: space-between;
-	gap: 8px;
+  display: grid;
+  grid-template-columns: 15rem 30rem auto;
+  grid-template-areas: "sidebar playlist musicplayer";
+  justify-content: space-between;
+  gap: 8px;
 
-	padding: 1rem;
-	font-family: -apple-system, BlinkMacSystemFont, Inter, Segoe UI, Roboto,
-		Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
-		Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-	background: linear-gradient(90deg, #4b3209, var(--background-color));
-	color: var(--primary-color);
+  padding: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, Inter, Segoe UI, Roboto,
+    Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  background: linear-gradient(90deg, #4b3209, var(--background-color));
+  color: var(--primary-color);
 }
 
-@media screen and (max-width: 768px) {
-	.app {
-		grid-template-columns: 15rem auto;
-		grid-template-areas:
-			"sidebar  musicplayer"
-			"playlist playlist";
-	}
+@media screen and (max-width: 890px) {
+  .app {
+    grid-template-columns: 15rem auto;
+    grid-template-areas:
+      "sidebar  musicplayer"
+      "playlist playlist";
+  }
 }
