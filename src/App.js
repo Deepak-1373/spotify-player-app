@@ -21,6 +21,7 @@ export default function App() {
     url: "",
     title: "",
     artist: "",
+    audioPath: "",
   });
 
   const { data, loading, error } = useQuery(PLAYLIST_QUERY, {
@@ -29,12 +30,13 @@ export default function App() {
   if (loading) return "Loading...";
   if (error) return "Something bad happened";
 
-  const handleClick = (url, title, artist) => {
+  const handleClick = (url, path, title, artist) => {
     setPosterData((prevData) => ({
       ...prevData,
-      url: url,
+      url: path,
       title: title,
       artist: artist,
+      audioPath: url,
     }));
   };
   return (

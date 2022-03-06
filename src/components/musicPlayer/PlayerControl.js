@@ -10,7 +10,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import "./MusicPlayer.css";
 
-export const PlayerControl = () => {
+export const PlayerControl = ({ isPlaying, setIsPlaying }) => {
   return (
     <div className="music-control-panel">
       <div>
@@ -22,8 +22,8 @@ export const PlayerControl = () => {
         <button className="skip-btn">
           <FontAwesomeIcon icon={faBackward} />
         </button>
-        <button className="play-btn">
-          <FontAwesomeIcon icon={faPlay} />
+        <button className="play-btn" onClick={() => setIsPlaying(!isPlaying)}>
+          <FontAwesomeIcon icon={isPlaying ? faPause : faPlay} />
         </button>
         <button className="skip-btn">
           <FontAwesomeIcon icon={faForward} />
