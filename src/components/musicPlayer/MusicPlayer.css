@@ -1,35 +1,42 @@
 .musicPlayer {
-	display: flex;
-	flex-direction: column;
-	padding-top: 1.5rem;
-	grid-area: musicplayer;
+  display: flex;
+  flex-direction: column;
+  padding-top: 1.5rem;
+  grid-area: musicplayer;
 }
 
 .musicPlayer-title h3 {
-	font-size: 3.2rem;
-	font-weight: 800;
+  font-size: 3.2rem;
+  font-weight: 800;
 }
 
 .musicPlayer-title p {
-	color: var(--secondary-color);
-	padding-bottom: 0.5rem;
-	font-size: 1.2rem;
+  color: var(--secondary-color);
+  padding-bottom: 0.5rem;
+  font-size: 1.2rem;
 }
 
 .musicPlayer-image {
-	margin-top: 2rem;
-	width: 40rem;
-	border-radius: 6px;
-	-webkit-border-radius: 6px;
-	-moz-border-radius: 6px;
-	-ms-border-radius: 6px;
-	-o-border-radius: 6px;
+  margin-top: 2rem;
+  width: 40rem;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
 }
 
 .musicPlayer-image img {
-	border-radius: 6px;
-	-webkit-border-radius: 6px;
-	-moz-border-radius: 6px;
-	-ms-border-radius: 6px;
-	-o-border-radius: 6px;
+  border-radius: 6px;
+}
+
+.ellipse-logo {
+  width: 3rem;
+  margin-top: 1.5rem;
+}
+
+.vector-logo {
+  position: absolute;
+  bottom: 11rem;
+  right: 38.4rem;
 }
