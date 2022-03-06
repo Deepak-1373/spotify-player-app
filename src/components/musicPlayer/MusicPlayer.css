@@ -30,13 +30,26 @@
   border-radius: 6px;
 }
 
-.ellipse-logo {
+.musicPlayer-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.musicPlayer-buttons img {
   width: 3rem;
-  margin-top: 1.5rem;
 }
 
 .vector-logo {
+  width: 2rem !important;
+  height: 1rem;
   position: absolute;
-  bottom: 11rem;
-  right: 38.4rem;
+  bottom: 10.2rem;
+  right: 38.5rem;
+}
+
+.playPause-div {
+  display: flex;
+  justify-content: space-between;
+  width: 14rem;
 }
