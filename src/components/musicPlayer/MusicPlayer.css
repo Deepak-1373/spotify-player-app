@@ -26,63 +26,80 @@
   -o-border-radius: 6px;
 }
 
-.musicPlayer-image img {
-  border-radius: 6px;
-}
-
+/* 
+Music Controls css
+ */
 .musicPlayer-buttons {
   display: flex;
-  justify-content: space-between;
   margin-top: 2rem;
 }
 
-.musicPlayer-buttons img {
-  width: 3rem;
-}
-
-.vector-logo {
-  width: 2rem !important;
-  height: 1rem;
-  position: absolute;
-  bottom: 10.2rem;
-  right: 38.5rem;
-}
-
-.playPause-div {
+.music-control-panel {
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  width: 14rem;
-}
-
-/* 
-Image Container
- */
-
-.image-small {
-  width: 2.2rem !important;
-  height: 1.2rem;
-}
-
-.image-play {
-  margin: 0 1.5rem;
-}
-
-.image-vector {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.1);
-  width: 3.2rem;
-  height: 3.2rem;
+}
+
+.play-btn {
+  cursor: pointer;
+  padding: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  background-color: #fff;
   border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(33, 33, 33, 0.1), 0 3px 12px rgba(33, 33, 33, 0.15);
+  transition: all 0.25s cubic-bezier(0.4, 0, 1, 1);
 }
 
-.image-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.play-btn:hover {
+  transform: scale(1.2);
+  color: rgba(171, 2, 26, 0.95);
+  opacity: 1;
+  box-shadow: 0 6px 9px rgba(33, 33, 33, 0.1), 0 6px 16px rgba(33, 33, 33, 0.15);
 }
 
-.music-controls {
-  display: flex;
+.skip-btn {
+  padding: 9px;
+  font-size: 1.6rem;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(33, 33, 33, 0.1), 0 3px 12px rgba(33, 33, 33, 0.15);
+  transition: all 0.25s cubic-bezier(0.4, 0, 1, 1);
+}
+
+.skip-btn:hover {
+  color: rgba(171, 2, 26, 0.95);
+  opacity: 1;
+  box-shadow: 0 6px 9px rgba(33, 33, 33, 0.1), 0 6px 16px rgba(33, 33, 33, 0.15);
+}
+
+.ellipsis-btn {
+  padding: 9px;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(33, 33, 33, 0.1), 0 3px 12px rgba(33, 33, 33, 0.15);
+  transition: all 0.25s cubic-bezier(0.4, 0, 1, 1);
+}
+
+.volume-btn {
+  padding: 9px;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(33, 33, 33, 0.1), 0 3px 12px rgba(33, 33, 33, 0.15);
+  transition: all 0.25s cubic-bezier(0.4, 0, 1, 1);
 }
