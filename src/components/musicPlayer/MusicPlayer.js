@@ -1,5 +1,5 @@
 import "./MusicPlayer.css";
-import Cover from "../../utilities/Cover.jpg";
+import Cover from "../../utility-images/Cover.jpg";
 import { PlayerControl } from "./PlayerControl";
 import { useState, useEffect, useRef } from "react";
 
@@ -18,15 +18,15 @@ export const MusicPlayer = ({ data }) => {
   }, [isPlaying]);
 
   return (
-    <div className="musicPlayer">
-      <div className="musicPlayer-title">
+    <div className="music-player">
+      <div className="music-player-title">
         <h3>{title === "" ? "Nothing" : title}</h3>
         <p>{artist === "" ? "The Script" : artist}</p>
       </div>
-      <div className="musicPlayer-image">
+      <div className="music-player-image">
         <img src={url === "" ? Cover : url} alt="Cover Image" />
       </div>
-      <div className="musicPlayer-buttons">
+      <div className="music-player-buttons">
         <audio
           src={audioPath === "" ? "" : audioPath}
           ref={audioElement}

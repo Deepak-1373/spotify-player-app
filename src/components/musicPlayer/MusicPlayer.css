@@ -1,35 +1,31 @@
-.musicPlayer {
+.music-player {
   display: flex;
   flex-direction: column;
   padding-top: 1.5rem;
   grid-area: musicplayer;
 }
 
-.musicPlayer-title h3 {
+.music-player-title h3 {
   font-size: 3.2rem;
   font-weight: 800;
 }
 
-.musicPlayer-title p {
+.music-player-title p {
   color: var(--secondary-color);
   padding-bottom: 0.5rem;
   font-size: 1.2rem;
 }
 
-.musicPlayer-image {
+.music-player-image {
   margin-top: 2rem;
   width: 40rem;
   border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -o-border-radius: 6px;
 }
 
 /* 
 Music Controls css
  */
-.musicPlayer-buttons {
+.music-player-buttons {
   display: flex;
   margin-top: 2rem;
 }

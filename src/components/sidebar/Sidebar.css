@@ -16,12 +16,12 @@
   padding-left: 0.5rem;
 }
 
-.sidebar-listElements {
+.sidebar-list-elements {
   list-style: none;
   color: var(--secondary-color);
 }
 
-.sidebar-listElement {
+.sidebar-list-element {
   cursor: pointer;
   margin-bottom: 2rem;
 }

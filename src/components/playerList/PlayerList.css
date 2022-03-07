@@ -2,7 +2,7 @@
   font-weight: 600;
 }
 
-.playerList {
+.player-list {
   display: flex;
   flex-direction: column;
   height: calc(100vh - 2rem);
@@ -10,7 +10,7 @@
   grid-area: playlist;
 }
 
-.playerList-searchbar {
+.player-list-searchbar {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -18,7 +18,7 @@
   top: 0;
 }
 
-.playerList-searchbar input {
+.player-list-searchbar input {
   padding: 1rem 8px;
   margin-top: 4px;
   font-family: inherit;
@@ -29,29 +29,29 @@
   border-radius: 4px;
 }
 
-.playerList-playlist {
+.player-list-playlist {
   cursor: pointer;
   margin-top: 2rem;
   display: flex;
   justify-content: space-between;
 }
 
-.playerList-playlist img {
+.player-list-playlist img {
   width: 3.2rem;
   height: 3.3rem;
 }
 
-.playerList-album-title {
+.player-list-album-title {
   display: flex;
+}
+
+.player-list-album-title p {
+  color: var(--secondary-color);
+  margin-top: 0.3rem;
 }
 
 .song-title {
   margin-left: 1.2rem;
-}
-
-.playerList-album-title p {
-  color: var(--secondary-color);
-  margin-top: 0.3rem;
 }
 
 .song-list {

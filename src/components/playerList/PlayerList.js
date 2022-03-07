@@ -15,8 +15,8 @@ export const PlayerList = ({ musicData, handleClick }) => {
   };
 
   return (
-    <div className="playerList">
-      <div className="playerList-searchbar">
+    <div className="player-list">
+      <div className="player-list-searchbar">
         <h2>For You</h2>
         <input type="text" placeholder="Search Song, Artist" />
       </div>
@@ -26,10 +26,10 @@ export const PlayerList = ({ musicData, handleClick }) => {
           data.map(({ title, artist, url, photo, duration }) => (
             <div
               key={title}
-              className="playerList-playlist"
+              className="player-list-playlist"
               onClick={() => handleClick(url, photo, title, artist)}
             >
-              <div className="playerList-album-title">
+              <div className="player-list-album-title">
                 <img alt="Album Poster" src={photo} />
                 <div className="song-title">
                   <h3 className="text-semibold">{title}</h3>
