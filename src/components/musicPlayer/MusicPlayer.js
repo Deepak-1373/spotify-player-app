@@ -4,7 +4,6 @@ import { PlayerControl } from "./PlayerControl";
 import { useState, useEffect, useRef } from "react";
 
 export const MusicPlayer = ({ data }) => {
-  console.log(data);
   const audioElement = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const { url, title, artist, audioPath } = data;

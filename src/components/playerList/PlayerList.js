@@ -31,7 +31,7 @@ export const PlayerList = ({ musicData, handleClick }) => {
             >
               <div className="player-list-album-title">
                 <img alt="Album Poster" src={photo} />
-                <div className="song-title">
+                <div className="player-list-song-title">
                   <h3 className="text-semibold">{title}</h3>
                   <p>{artist}</p>
                 </div>

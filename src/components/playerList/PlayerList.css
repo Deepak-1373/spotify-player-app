@@ -5,7 +5,7 @@
 .player-list {
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 2rem);
+  height: calc(100vh - 0.1rem);
   padding-top: 1.5rem;
   grid-area: playlist;
 }
@@ -23,10 +23,10 @@
   margin-top: 4px;
   font-family: inherit;
   outline: none;
-  color: #000;
-  background: #cbd5e1;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 
 .player-list-playlist {
@@ -39,6 +39,7 @@
 .player-list-playlist img {
   width: 3.2rem;
   height: 3.3rem;
+  border-radius: 50%;
 }
 
 .player-list-album-title {
@@ -50,14 +51,14 @@
   margin-top: 0.3rem;
 }
 
-.song-title {
+.player-list-song-title {
   margin-left: 1.2rem;
 }
 
-.song-list {
+.player-list-song-title {
   overflow: auto;
 }
 
-.song-list::-webkit-scrollbar {
+.player-list-song-title::-webkit-scrollbar {
   display: none;
 }
