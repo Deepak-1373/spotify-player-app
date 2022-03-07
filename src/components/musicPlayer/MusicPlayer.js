@@ -26,6 +26,7 @@ export const MusicPlayer = ({ data }) => {
       <div className="music-player-image">
         <img src={url === "" ? Cover : url} alt="Cover Image" />
       </div>
+      <div className="music-player-range"></div>
       <div className="music-player-buttons">
         <audio
           src={audioPath === "" ? "" : audioPath}

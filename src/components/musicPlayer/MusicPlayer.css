@@ -23,11 +23,39 @@
 }
 
 /* 
+Progress bar
+ */
+
+.music-player-range {
+  position: relative;
+  margin: auto;
+  background: rgb(106 95 95 / 95%);
+  width: 100%;
+  height: 8px;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.music-player-range:before,
+.music-player-range:after {
+  content: "";
+  position: absolute;
+  cursor: pointer;
+}
+
+.music-player-range:before {
+  width: 8rem;
+  height: 100%;
+  background: #fff;
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+/* 
 Music Controls css
  */
 .music-player-buttons {
   display: flex;
-  margin-top: 2rem;
 }
 
 .music-control-panel {
