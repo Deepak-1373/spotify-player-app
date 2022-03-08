@@ -131,7 +131,7 @@ Music Controls css
 @media screen and (max-width: 432px) {
   .music-player-image {
     margin-top: 2rem;
-    width: 50%;
+    width: 80%;
     border-radius: 6px;
   }
 
@@ -143,8 +143,12 @@ Music Controls css
     align-items: center;
   }
 
+  .music-player-buttons {
+    width: 80%;
+  }
+
   .music-player-title {
-    width: 50%;
+    width: 80%;
   }
 
   .music-player-title h3 {
@@ -160,15 +164,15 @@ Music Controls css
 
   .music-player-range {
     margin-top: 1.2rem;
-    width: 50%;
+    width: 80%;
   }
 
   .ellipsis-btn {
-    display: none;
+    font-size: 1.3rem;
   }
 
   .volume-btn {
-    display: none;
+    font-size: 1.3rem;
   }
 
   .play-btn {
