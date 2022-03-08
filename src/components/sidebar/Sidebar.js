@@ -1,11 +1,16 @@
 import "./Sidebar.css";
 import Vector from "../../utility-images/Vector.png";
 import Profile from "../../utility-images/Profile.svg";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Hamburger } from "./Hamburger";
 
-export const Sidebar = () => {
+export const Sidebar = ({ categoriesData }) => {
+  const [data, setData] = useState([]);
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
+
+  useEffect(() => {
+    setData((prev) => categoriesData.getPlaylists);
+  }, [categoriesData]);
 
   const toggleHamburger = () => {
     setHamburgerOpen((prev) => !prev);
@@ -20,10 +25,19 @@ export const Sidebar = () => {
         }`}
       >
         <ul className={!hamburgerOpen ? "sidebar-list-elements" : "hide-menu"}>
-          <li className="sidebar-list-element active">For You</li>
-          <li className="sidebar-list-element">Top Tracks</li>
-          <li className="sidebar-list-element">Favourites</li>
-          <li className="sidebar-list-element">Recently Played</li>
+          {data &&
+            data.map(({ id, title }) => (
+              <li
+                key={id}
+                className={
+                  id === 1
+                    ? "sidebar-list-element active"
+                    : "sidebar-list-element"
+                }
+              >
+                {title}
+              </li>
+            ))}
         </ul>
         <button onClick={() => setHamburgerOpen(false)}>x</button>
       </div>

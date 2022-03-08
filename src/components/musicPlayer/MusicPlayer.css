@@ -136,3 +136,56 @@ Music Controls css
     margin-top: 1.5rem;
   }
 }
+
+@media screen and (max-width: 432px) {
+  .music-player-image {
+    margin-top: 2rem;
+    width: 50%;
+    border-radius: 6px;
+  }
+
+  .music-player-mobile-view {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .music-player-title {
+    width: 50%;
+  }
+
+  .music-player-title h3 {
+    font-size: 2.2rem;
+    font-weight: 800;
+  }
+
+  .music-player-title p {
+    color: var(--secondary-color);
+    padding-bottom: 0.3rem;
+    font-size: 0.8rem;
+  }
+
+  .music-player-range {
+    margin-top: 1.2rem;
+    width: 50%;
+  }
+
+  .ellipsis-btn {
+    display: none;
+  }
+
+  .volume-btn {
+    display: none;
+  }
+
+  .play-btn {
+    font-size: 1.1rem;
+    padding: 1.3rem;
+  }
+
+  .skip-btn {
+    font-size: 1.3rem;
+  }
+}

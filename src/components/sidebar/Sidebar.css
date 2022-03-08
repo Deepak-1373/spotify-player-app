@@ -68,6 +68,12 @@
   list-style: none;
 }
 
+@media screen and (max-width: 930px) {
+  .sidebar-profile-logo {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .sidebar {
     display: flex;

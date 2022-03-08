@@ -5,7 +5,7 @@
 .player-list {
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 0.1rem);
+  height: calc(100vh - 2rem);
   padding-top: 1.5rem;
   grid-area: playlist;
 }
@@ -59,6 +59,21 @@
   overflow: auto;
 }
 
+.song-list {
+  height: 100%;
+  overflow: auto;
+}
+
 .player-list-song-title::-webkit-scrollbar {
   display: none;
+}
+
+.song-list::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 890px) {
+  .player-list-searchbar {
+    position: unset;
+  }
 }

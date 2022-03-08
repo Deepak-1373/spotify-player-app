@@ -18,7 +18,7 @@ export const MusicPlayer = ({ data }) => {
 
   return (
     <div className="music-player">
-      <div>
+      <div className="music-player-mobile-view">
         <div className="music-player-title">
           <h3>{title === "" ? "Nothing" : title}</h3>
           <p>{artist === "" ? "The Script" : artist}</p>

@@ -29,7 +29,7 @@ export default function App() {
   };
   return (
     <div className="app">
-      <Sidebar />
+      <Sidebar categoriesData={data} />
       <PlayerList musicData={data} handleClick={handleClick} />
       <MusicPlayer data={posterData} />
     </div>
