@@ -22,9 +22,8 @@ img {
 
 .app {
   display: grid;
-  grid-template-columns: 15rem 30rem auto;
+  grid-template-columns: 20rem 30rem auto;
   grid-template-areas: "sidebar playlist musicplayer";
-  justify-content: space-between;
   gap: 8px;
 
   padding: 1rem;
@@ -41,5 +40,12 @@ img {
     grid-template-areas:
       "sidebar  musicplayer"
       "playlist playlist";
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .app {
+    display: flex;
+    flex-direction: column;
   }
 }

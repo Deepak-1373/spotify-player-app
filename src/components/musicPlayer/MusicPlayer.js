@@ -18,20 +18,22 @@ export const MusicPlayer = ({ data }) => {
 
   return (
     <div className="music-player">
-      <div className="music-player-title">
-        <h3>{title === "" ? "Nothing" : title}</h3>
-        <p>{artist === "" ? "The Script" : artist}</p>
-      </div>
-      <div className="music-player-image">
-        <img src={url === "" ? Cover : url} alt="Cover Image" />
-      </div>
-      <div className="music-player-range"></div>
-      <div className="music-player-buttons">
-        <audio
-          src={audioPath === "" ? "" : audioPath}
-          ref={audioElement}
-        ></audio>
-        <PlayerControl isPlaying={isPlaying} setIsPlaying={setIsPlaying} />
+      <div>
+        <div className="music-player-title">
+          <h3>{title === "" ? "Nothing" : title}</h3>
+          <p>{artist === "" ? "The Script" : artist}</p>
+        </div>
+        <div className="music-player-image">
+          <img src={url === "" ? Cover : url} alt="Cover Image" />
+        </div>
+        <div className="music-player-range"></div>
+        <div className="music-player-buttons">
+          <audio
+            src={audioPath === "" ? "" : audioPath}
+            ref={audioElement}
+          ></audio>
+          <PlayerControl isPlaying={isPlaying} setIsPlaying={setIsPlaying} />
+        </div>
       </div>
     </div>
   );
