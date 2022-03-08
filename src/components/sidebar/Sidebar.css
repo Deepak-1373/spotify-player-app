@@ -87,6 +87,28 @@
     cursor: pointer;
   }
 
+  .hide-menu {
+    color: var(--secondary-color);
+  }
+
+  .sidebar-button-mobile-view {
+    width: 2.5rem;
+    height: 2.5rem;
+    position: sticky;
+    top: 2.2rem;
+    right: 1rem;
+    cursor: pointer;
+    background: #171717;
+    color: #fff;
+    border: 1px solid #fff;
+    transition: ease-out 0.3s;
+    transform-origin: 1px;
+  }
+
+  .sidebar-list-element .active {
+    color: var(--primary-color);
+  }
+
   .sidebar-list {
     display: flex;
     justify-content: space-between;

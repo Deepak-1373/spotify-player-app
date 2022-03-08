@@ -39,7 +39,12 @@ export const Sidebar = ({ categoriesData }) => {
               </li>
             ))}
         </ul>
-        <button onClick={() => setHamburgerOpen(false)}>x</button>
+        <button
+          className="sidebar-button-mobile-view"
+          onClick={() => setHamburgerOpen(false)}
+        >
+          X
+        </button>
       </div>
       <div className="hamburger-menu" onClick={toggleHamburger}>
         <Hamburger isOpen={hamburgerOpen} />
