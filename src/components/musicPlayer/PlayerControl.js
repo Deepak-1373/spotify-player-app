@@ -12,7 +12,7 @@ import "./MusicPlayer.css";
 
 export const PlayerControl = ({ isPlaying, setIsPlaying }) => {
   return (
-    <div className="music-control-panel">
+    <div className="music-control-panel flex">
       <div>
         <button className="ellipsis-btn">
           <FontAwesomeIcon icon={faEllipsis} />

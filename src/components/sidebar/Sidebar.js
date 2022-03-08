@@ -17,7 +17,7 @@ export const Sidebar = ({ categoriesData }) => {
   };
 
   return (
-    <div className="sidebar">
+    <div className="sidebar flex-column">
       <img src={Vector} alt="Spotify logo" className="sidebar-spotify-logo" />
       <div
         className={`sidebar-list ${

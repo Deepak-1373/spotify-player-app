@@ -17,9 +17,9 @@ export const MusicPlayer = ({ data }) => {
   }, [isPlaying]);
 
   return (
-    <div className="music-player">
+    <div className="music-player flex-column">
       <div className="music-player-mobile-view">
-        <div className="music-player-title">
+        <div className="music-player-title flex-column">
           <h3>{title === "" ? "Nothing" : title}</h3>
           <p>{artist === "" ? "The Script" : artist}</p>
         </div>
@@ -27,7 +27,7 @@ export const MusicPlayer = ({ data }) => {
           <img src={url === "" ? Cover : url} alt="Cover Image" />
         </div>
         <div className="music-player-range"></div>
-        <div className="music-player-buttons">
+        <div className="music-player-buttons flex">
           <audio
             src={audioPath === "" ? "" : audioPath}
             ref={audioElement}

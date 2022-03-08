@@ -1,9 +1,7 @@
 .music-player {
-  display: flex;
-  flex-direction: column;
-  padding-top: 1.5rem;
-  grid-area: musicplayer;
   width: 100%;
+  grid-area: musicplayer;
+  padding-top: 1.5rem;
   justify-content: center;
   align-items: center;
 }
@@ -14,8 +12,6 @@
 }
 
 .music-player-title {
-  display: flex;
-  flex-direction: column;
   width: 100%;
   justify-content: flex-start;
 }
@@ -64,13 +60,8 @@ Progress bar
 /* 
 Music Controls css
  */
-.music-player-buttons {
-  display: flex;
-}
-
 .music-control-panel {
   width: 100%;
-  display: flex;
   justify-content: space-between;
   align-items: center;
 }
@@ -83,8 +74,8 @@ Music Controls css
   font-size: 1.6rem;
   border: none;
   outline: none;
-  background: #fff;
-  color: #111;
+  background: var(--primary-color);
+  color: var(--black-color);
   border-radius: 50%;
   box-shadow: 0 3px 6px rgba(33, 33, 33, 0.1), 0 3px 12px rgba(33, 33, 33, 0.15);
   transition: all 0.25s cubic-bezier(0.4, 0, 1, 1);
@@ -106,7 +97,7 @@ Music Controls css
   font-size: 1.4rem;
   border: none;
   outline: none;
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--input-background-color);
   color: #fff;
   border-radius: 50%;
   cursor: pointer;
@@ -119,8 +110,8 @@ Music Controls css
   font-size: 1.4rem;
   border: none;
   outline: none;
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff;
+  background: var(--input-background-color);
+  color: var(--primary-color);
   border-radius: 50%;
   cursor: pointer;
   box-shadow: 0 3px 6px rgba(33, 33, 33, 0.1), 0 3px 12px rgba(33, 33, 33, 0.15);

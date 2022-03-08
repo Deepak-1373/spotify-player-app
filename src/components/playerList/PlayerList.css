@@ -1,18 +1,10 @@
-.text-semibold {
-  font-weight: 600;
-}
-
 .player-list {
-  display: flex;
-  flex-direction: column;
   height: calc(100vh - 2rem);
   padding-top: 1.5rem;
   grid-area: playlist;
 }
 
 .player-list-searchbar {
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
   position: sticky;
   top: 0;
@@ -23,8 +15,8 @@
   margin-top: 4px;
   font-family: inherit;
   outline: none;
-  color: #fff;
-  background: rgba(255, 255, 255, 0.1);
+  color: var(--primary-color);
+  background: var(--input-background-color);
   border: none;
   border-radius: 5px;
 }
@@ -32,7 +24,6 @@
 .player-list-playlist {
   cursor: pointer;
   margin-top: 2rem;
-  display: flex;
   justify-content: space-between;
 }
 
@@ -40,10 +31,6 @@
   width: 3.2rem;
   height: 3.3rem;
   border-radius: 50%;
-}
-
-.player-list-album-title {
-  display: flex;
 }
 
 .player-list-album-title p {
