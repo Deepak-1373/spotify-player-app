@@ -1,7 +1,7 @@
 import React from "react";
 import "./Sidebar.css";
 
-export const Hamburger = ({ isOpen }) => {
+export const Hamburger = () => {
   return (
     <div className="hamburger">
       <div className="burger "></div>

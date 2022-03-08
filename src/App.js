@@ -3,6 +3,7 @@ import { Sidebar, PlayerList, MusicPlayer } from "./components";
 import { useState } from "react";
 import { PLAYLIST_QUERY } from "./api/data";
 import { useQuery } from "@apollo/client";
+import { MutatingDots } from "react-loader-spinner";
 
 export default function App() {
   const [posterData, setPosterData] = useState({
@@ -15,7 +16,12 @@ export default function App() {
   const { data, loading, error } = useQuery(PLAYLIST_QUERY, {
     variables: { playlistId: 1 },
   });
-  if (loading) return "Loading...";
+  if (loading)
+    return (
+      <div className="loading-spinner">
+        <MutatingDots radius={15} />;
+      </div>
+    );
   if (error) return "Something bad happened";
 
   const handleClick = (url, path, title, artist) => {

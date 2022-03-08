@@ -47,7 +47,7 @@ export const Sidebar = ({ categoriesData }) => {
         </button>
       </div>
       <div className="hamburger-menu" onClick={toggleHamburger}>
-        <Hamburger isOpen={hamburgerOpen} />
+        <Hamburger />
       </div>
       <img src={Profile} alt="Profile" className="sidebar-profile-logo" />
     </div>

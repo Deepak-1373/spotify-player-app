@@ -41,6 +41,10 @@
   display: none;
 }
 
+.sidebar-button-mobile-view {
+  display: none;
+}
+
 /* Hamburger Component Styles */
 .hamburger {
   width: 2rem;
@@ -92,6 +96,7 @@
   }
 
   .sidebar-button-mobile-view {
+    display: block;
     width: 2.5rem;
     height: 2.5rem;
     position: sticky;
